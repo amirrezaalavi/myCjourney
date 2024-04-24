@@ -1,0 +1,4 @@
+write a program that handles input
+gets input using fgets, then handles what types are in this string 
+for example "hello 23432 0324" is a string + int + int(octal)
+it can do this using a struct

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-/* Converting Km to Miles */
+/* Converting Km to Miles Program
+ * input -> scan input -> calculate -> print the result*/
 const float RATIO = 0.6213712; // Miles = ration * km
 
 char input_text[50];
