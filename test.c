@@ -1,38 +1,16 @@
-/*#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-char input[50] = {};
+#include <stdio.h>
 
 int main(void) {
-
-  for (int i = 0; i < 6; i++) {
-    memset(input, 0, 49);
-    fgets(input, 49, stdin);
-    printf("\n%c\n", input[6]);
-    for (int j = 0; j < 10; j++) {
-      printf("%c", input[j]);
-    }
+  short int a = 1;
+  long int b = 1000000000;
+  printf("%hb\n", a);
+  for (long int i = 1; i > 0; i <<= 2) {
+    printf("%lb\n", i);
+    b = i;
   }
-  return EXIT_SUCCESS;
+  b = 1000000001;
+  short int c = b % a;
+  // printf("%b\n%lb", c, b);
+  printf("%d\n", 12 % 5);
+  return 0;
 }
-*/
-int length(char string[]) {
-  int index;
-  /* index into the string */
-}
-/*
- * Loop until we reach the end of string character
- */
-for (index = 0; string[index] != '\0'; ++index)
-  /* do nothing */
-  return (index);
-int {
-  main() char line[100];
-  /* Input line from user */
-}
-while (1) {
-  printf("Enter line:");
-  fgets(line, sizeof(line), stdin);
-}
-printf("Length (including newline) is: %d\n", length(line));
