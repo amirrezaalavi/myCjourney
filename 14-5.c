@@ -20,6 +20,8 @@ int main(int argc, char *argv[]) {
   int inp_desc, out_desc; // input/output file descriptor
   int read_size = 1;      // number of bytes on last read
 
+  
+  // Opening Files
   if (argc != 3) {
     fprintf(stderr, "Error, wrong number of parameters\n");
     fprintf(stdout, "Usage is: ./copy <src> <dest>");
