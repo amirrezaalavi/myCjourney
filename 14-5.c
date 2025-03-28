@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
     fprintf(stderr, "Problem with input file");
     exit(8);
   }
-  out_desc = open(argv[2], O_WRONLY | O_BINARY | O_CREAT, O_TRUNC, mode);
+  out_desc = open(argv[2], O_WRONLY | O_BINARY | O_CREAT | O_TRUNC, mode);
   if (out_desc < 0) {
     fprintf(stderr, "Problem with output file");
     exit(8); //
