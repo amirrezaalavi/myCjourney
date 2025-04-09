@@ -2,18 +2,19 @@
 #include <unistd.h>
 
 
-
+const int BUFFER_SIZE = 200;
 
 
 int main(int argc, char *argv[]){
-  FILE *inp_file;
-  char iterator_char;
-  do {
-    inp_file = fopen(argv[1], "r");
-    iterator_char = fgetc(inp_file);
-    sleep(1);
-    fflush(stdout);
-    printf("%c", iterator_char);
-    fclose(inp_file);
-  }while (iterator_char != EOF);
+  FILE *file;
+  file = fopen("data.bin", "r");
+  char *line1, line2[BUFFER_SIZE];
+  for (int i = 0 ; i < 4; i++) {
+
+
+  fgets(line2, BUFFER_SIZE, file);
+  printf("%s\n", line2);
+  }
+  fclose(file);
+
 }

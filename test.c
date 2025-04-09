@@ -2,6 +2,6 @@
 
 int main(void)
 {
-  printf("%x %x %c \n", '\t', ' ', 0x80);
+  printf("%x %d %c \n", '\t', '\n', 0x80);
   return 0;
 }
